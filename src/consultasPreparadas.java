@@ -4,7 +4,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
+
 
 
 public class consultasPreparadas {
@@ -18,7 +18,7 @@ public class consultasPreparadas {
             System.out.println("Conexión realizada con éxito.");
             String sentencia="SELECT NOMBREARTICULO,SECCION,PRECIO,PAISORIGEN FROMPRODUCTOS" + " WHERE SECCION=? AND PAISORIGEN=?";          
             PreparedStatement miPSt=con.prepareStatement(sentencia);
-            miPSt.setString(1,"confección");
+            miPSt.setString(1,"Confección");
             miPSt.setString(2,"España");
             
             ResultSet miRs=miPSt.executeQuery();
