@@ -31,7 +31,7 @@ public class consultasPreparadas {
             
             //System.out.println("Conexión cerrada.");
         } catch (SQLException ex) {
-            System.out.println("Ha ocurrido algún error.");
+            System.out.println("Ha ocurrido algún error inesperado.");
         }
     }
     
